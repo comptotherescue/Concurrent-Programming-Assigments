@@ -1,0 +1,5 @@
+1.Create a new class AtomicSequencer that uses Java's atomic variables to create a Sequencer that is thread safe.  Create some junit tests with the same number of threads and iterations that typically fail in the original version and and show that they pass now.
+
+2.Create a new class LockedSequencer that uses Java's ReentrantLock to make the sequencer thread safe.  Modify your test cases from AtomicSequencer to work with this version.
+
+3.Add timers to code from all your test cases and try to quantify the overhead caused by using atomic variables and locks.  Which alternative, atomic variable or locks give better performance.  Note that to get statistically meaningful values you will need to run test cases that are fairly long and repeat them several times and take an average.
